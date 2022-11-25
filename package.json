@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "^11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.15",
     "@reduxjs/toolkit": "^1.9.0",
     "@svgr/webpack": "^6.5.1",
     "@types/node": "18.11.9",
