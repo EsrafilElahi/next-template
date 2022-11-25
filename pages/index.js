@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setName } from '../redux/slices/userSlice'
 import MainLayout from '../component/MainLayout'
+import { Button } from '@mui/material'
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
     <div>
       <span>nextjs redux</span>
       <button onClick={handleClick}>btn</button>
+      <Button variant="contained">btn material</Button>
     </div>
   )
 }
