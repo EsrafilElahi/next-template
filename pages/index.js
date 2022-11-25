@@ -20,8 +20,8 @@ const Home = () => {
 
   return (
     <div>
-      <span>nextjs redux</span>
-      <button onClick={handleClick}>btn</button>
+      <span className='text-primary'>nextjs redux</span>
+      <button onClick={handleClick} className="btn-blue">btn</button>
     </div>
   )
 }
