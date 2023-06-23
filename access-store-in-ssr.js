@@ -44,3 +44,32 @@ export const getServerSideProps = wrapper.getServerSideProps(async ({ store }) =
 });
 
 export default YourPage;
+
+
+
+// another way
+import store from '../path/to/store';
+
+const YourPage = () => {
+  // Access the Redux store state
+  const { yourState } = store.getState();
+
+  // ...
+};
+
+// inside the page
+import { getServerSideProps } from 'next';
+import store from '../path/to/store';
+
+export const getServerSideProps = async () => {
+  // Access the Redux store state
+  const { yourState } = store.getState();
+
+  // ...
+
+  return {
+    props: {
+      yourState,
+    },
+  };
+};
